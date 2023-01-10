@@ -24,7 +24,7 @@ BreachType classifyTemperatureBreach(
       lowerLimit = 0;
       upperLimit = 45;
       break;
-    case MED_ACTIVE_COOLING:
+    default:
       lowerLimit = 0;
       upperLimit = 40;
       break;
@@ -65,7 +65,12 @@ void sendToEmail(BreachType breachType) {
       printf("To: %s\n", recepient);
       printf("Hi, the temperature is too high\n");
       break;
-    case NORMAL:
+    default:
       break;
   }
 }
+
+printf("hello");
+printf("hello");
+printf("hello");
+printf("hello");
